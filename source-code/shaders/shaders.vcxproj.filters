@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{669ba81f-6dd5-44dd-86cb-92c5f89b8ca2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\deps\glad.c">
@@ -21,5 +24,21 @@
     <ClCompile Include="shaders_interpolation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="shaders_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader_s.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vertexshader.sd">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="fragmentshader.sd">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
