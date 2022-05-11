@@ -24,7 +24,7 @@
     <ClCompile Include="shaders_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Shader_s.cpp">
+    <ClCompile Include="..\deps\Shader_s.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +35,5 @@
     <None Include="fragmentshader.sd">
       <Filter>shaders</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Shader_s.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
