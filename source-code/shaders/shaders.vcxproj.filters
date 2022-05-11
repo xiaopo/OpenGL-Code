@@ -21,17 +21,12 @@
     <ClCompile Include="..\deps\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="shaders_interpolation.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="shaders_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Shader_s.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="Shader_s.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="vertexshader.sd">
@@ -40,5 +35,10 @@
     <None Include="fragmentshader.sd">
       <Filter>shaders</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader_s.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
