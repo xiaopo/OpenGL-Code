@@ -21,8 +21,5 @@
     <ClCompile Include="hello_triangle_indexed.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="hello_triangle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
