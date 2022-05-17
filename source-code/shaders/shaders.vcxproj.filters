@@ -24,7 +24,7 @@
     <ClCompile Include="shaders_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\deps\Shader_s.cpp">
+    <ClCompile Include="..\deps\shader_s.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
