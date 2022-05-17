@@ -1,13 +1,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
-#include <Shader_s.h>
+#include <shader_s.h>
 #include <iostream>
-
+#include <texture_s.h>
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
-unsigned createTexture(std::string filename, int t1, int t2);
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -89,8 +86,8 @@ int main()
 
 	// load and create a texture 
 	// -------------------------
-	unsigned int texture1 = createTexture("../Assets/Image/container.jpg", GL_RGB, GL_RGB);
-	unsigned int texture2 = createTexture("../Assets/Image/awesomeface.png", GL_RGB, GL_RGBA);
+	unsigned int texture1 = texture_gen(TEXTURE1, GL_RGB, GL_RGB);
+	unsigned int texture2 = texture_gen(TEXTURE2, GL_RGB, GL_RGBA);
 	
 
 	ourShader.use(); // don't forget to activate the shader before setting uniforms!  
@@ -155,35 +152,4 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	// make sure the viewport matches the new window dimensions; note that width and 
 	// height will be significantly larger than specified on retina displays.
 	glViewport(0, 0, width, height);
-}
-
-unsigned createTexture(std::string filename,int t1,int t2)
-{
-	unsigned int texture;
-	glGenTextures(1, &texture);
-	glBindTexture(GL_TEXTURE_2D, texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
-	// set the texture wrapping parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	// set texture filtering parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	// load image, create texture and generate mipmaps
-	int width, height, nrChannels;
-
-	// The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-
-	unsigned char* data = stbi_load(&filename[0], &width, &height, &nrChannels, 0);
-	if (data)
-	{
-		glTexImage2D(GL_TEXTURE_2D, 0, t1, width, height, 0, t2, GL_UNSIGNED_BYTE, data);
-		glGenerateMipmap(GL_TEXTURE_2D);
-	}
-	else
-	{
-		std::cout << "Failed to load texture" << std::endl;
-	}
-	stbi_image_free(data);
-
-	return texture;
 }
