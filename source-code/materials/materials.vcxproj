@@ -146,6 +146,12 @@
     <ClCompile Include="..\deps\shader_s.cpp" />
     <ClCompile Include="materials.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="light_cube.fs" />
+    <None Include="light_cube.vs" />
+    <None Include="materials.fs" />
+    <None Include="materials.vs" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
