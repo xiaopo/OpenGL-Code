@@ -15,7 +15,6 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow* window);
-unsigned int loadTexture(const char* path);
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -155,8 +154,8 @@ int main()
 
 	// load textures (we now use a utility function to keep the code more organized)
 	// -----------------------------------------------------------------------------
-	unsigned int diffuseMap = texture_load("container_diffuse.png");
-	unsigned int specularMap = texture_load("container_specular.png");
+	unsigned int diffuseMap = texture_load(DIFFUSE);
+	unsigned int specularMap = texture_load(SPECULAR);
 
 	// shader configuration
 	// --------------------
