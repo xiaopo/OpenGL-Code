@@ -9,7 +9,9 @@
 
 #define TEXTURE1 "../Assets/Image/container.jpg"
 #define  TEXTURE2 "../Assets/Image/awesomeface.png"
-
+#define  WALL "../Assets/Image/wall.png"
+#define  DIFFUSE "../Assets/Image/container_diffuse.png"
+#define  SPECULAR "../Assets/Image/container_specular.png"
 
 unsigned texture_gen(std::string filename, int t1, int t2,bool flip = false)
 {
