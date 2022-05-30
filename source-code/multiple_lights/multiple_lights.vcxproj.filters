@@ -18,25 +18,11 @@
     <ClCompile Include="multiple_lights.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\deps\glad.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="..\deps\shader_s.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="light_cube.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="light_cube.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="multiple_lights.fs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="multiple_lights.vs">
-      <Filter>资源文件</Filter>
-    </None>
+    <ClCompile Include="..\deps\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
