@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{60b384c3-01f6-4592-b3d0-12e622d85966}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basic_lighting_specular.cpp">
@@ -24,5 +27,19 @@
     <ClCompile Include="..\deps\shader_s.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_lighting.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="basic_lighting.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="light_cube.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="light_cube.vs">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

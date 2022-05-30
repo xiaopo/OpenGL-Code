@@ -146,6 +146,12 @@
     <ClCompile Include="..\deps\shader_s.cpp" />
     <ClCompile Include="basic_lighting_specular.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="basic_lighting.fs" />
+    <None Include="basic_lighting.vs" />
+    <None Include="light_cube.fs" />
+    <None Include="light_cube.vs" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
