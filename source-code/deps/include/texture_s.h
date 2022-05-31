@@ -10,7 +10,7 @@ using namespace std;
 
 #define TEXTURE1 "../Assets/Image/container.jpg"
 #define  TEXTURE2 "../Assets/Image/awesomeface.png"
-#define  WALL "../Assets/Image/wall.png"
+#define  WALL "../Assets/Image/wall.jpg"
 #define  DIFFUSE "../Assets/Image/container_diffuse.png"
 #define  SPECULAR "../Assets/Image/container_specular.png"
 
