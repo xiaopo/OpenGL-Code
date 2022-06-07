@@ -246,6 +246,10 @@
 //		glDrawArrays(GL_TRIANGLES, 0, 6);
 //		// vegetation
 //		glBindVertexArray(transparentVAO);
+//		//glEnable(GL_CULL_FACE);
+//		//glCullFace(GL_BACK);
+//		//glFrontFace(GL_CCW);
+//
 //		glBindTexture(GL_TEXTURE_2D, transparentTexture);
 //		for (unsigned int i = 0; i < vegetation.size(); i++)
 //		{
